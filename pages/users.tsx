@@ -6,7 +6,7 @@ const Test: NextPage = () => {
     return (
         <div>
             <h1>hello nextjs</h1>
-            <p>I'm Harano Ikuto</p>
+            <p>Im Harano Ikuto</p>
 
             <form action='/api/users' method='post'>
                 <label>id:</label>
