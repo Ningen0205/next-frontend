@@ -9,12 +9,29 @@ type User = {
   password: string;
 };
 
+const mockUsers: User[] = [
+  {
+    id: 1,
+    firstName: 'harano',
+    lastName: 'Ikuto',
+    email: 'harano@example.com',
+    password: 'password',
+  },
+  {
+    id: 2,
+    firstName: 'Test',
+    lastName: 'Tarou',
+    email: 'tarou@example.com',
+    password: 'tarouPass',
+  },
+];
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
   if (req.method == 'GET') {
-    const response = await axios.get('http://localhost:8080/api/v1/users');
-    res.json(response.data);
+    // const response = await axios.get('http://localhost:8080/api/v1/users');
+    res.json(mockUsers);
     return;
   }
 
