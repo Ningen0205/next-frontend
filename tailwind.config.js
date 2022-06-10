@@ -1,11 +1,8 @@
-const moduleExt = "{js,ts,jsx,tsx}"
+const moduleExt = '{js,ts,jsx,tsx}';
 module.exports = {
-    content: [
-        `./pages/**/*.${moduleExt}`,
-        `./components/**/*.${moduleExt}`,
-    ],
-    theme: {
-        extend: {},
-    },
-    plugins: []
-}
+  content: [`./src/pages/**/*.${moduleExt}`, `./src/components/**/*.${moduleExt}`],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
